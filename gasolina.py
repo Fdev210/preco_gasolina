@@ -8,7 +8,7 @@ with open('gasolina.csv', mode='r', encoding='utf8') as fp:
 
 #GRÁFICO
 with sns.axes_style('whitegrid'):
-  grafico = sns.lineplot(data=gasolina_df, x="dia", y="venda", palette="pastel")
+  grafico = sns.lineplot(data=gasolina_df, x="dia", y="venda", palette="dark")
   grafico.set(title='Preço da Gsolina', xlabel='dia', ylabel='venda');
 
 # SALVE COMO PNG
